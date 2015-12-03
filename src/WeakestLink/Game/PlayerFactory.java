@@ -25,6 +25,7 @@ public class PlayerFactory {
         playerCreators.put(Guard.class, Guard::new);
         playerCreators.put(Hero.class, Hero::new);
         playerCreators.put(Leech.class, Leech::new);
+        playerCreators.put(VengefulSniper.class, VengefulSniper::new);
         playerCreators.put(PrudentSniper.class, PrudentSniper::new);
         playerCreators.put(RevengePlayer.class, RevengePlayer::new);
         playerCreators.put(SniperAide.class, SniperAide::new);

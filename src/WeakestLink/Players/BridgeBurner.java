@@ -11,14 +11,14 @@ public class BridgeBurner extends Player{
         List<Integer> votes_against = Stream.generate(() -> 0).limit(9).collect(Collectors.toList());
         List<Integer> last_voted_against = Stream.generate(() -> 0).limit(9).collect(Collectors.toList());
         Iterator<Vote> votes_against_me = getVotesForSelf().iterator();
-        
+
         for (int c = 0; c < 9; c++){
             if (!currentOpponents.contains(c)){
                 votes_against.set(c,-1);
                 last_voted_against.set(c,-1);
             }
         }
-        
+
         while(votes_against_me.hasNext()){
             Vote vote = votes_against_me.next();
 

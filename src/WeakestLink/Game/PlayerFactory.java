@@ -32,6 +32,9 @@ public class PlayerFactory {
         playerCreators.put(SniperKiller.class, SniperKiller::new);
         playerCreators.put(BobPlayer.class, BobPlayer::new);
         playerCreators.put(Bandwagon.class, Bandwagon::new);
+        playerCreators.put(HighOrLowNotSelf.class, HighOrLowNotSelf::new);
+        playerCreators.put(Spy.class, Spy::new);
+        playerCreators.put(VengefulSniper.class, VengefulSniper::new);
     }
 
     public static Collection<Class<? extends Player>> getAllPlayerTypes(){
